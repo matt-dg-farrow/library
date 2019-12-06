@@ -4,7 +4,7 @@ public abstract class Item {
 
 	public static int id;
 	public String name;
-	private boolean availability;
+	public boolean availability = true;
 
 	public boolean checkOut() {
 		if (availability) {

@@ -47,6 +47,9 @@ public class testLibrary {
 		lib1.addItem(book1);
 
 		assertTrue(lib1.library1.contains(book1));
+		book1.checkIn();
+		System.out.println(lib1.isAvailable(book1));
+		assertEquals("THE BOOK! is available.", lib1.isAvailable(book1));
 
 		lib1.removeItem(book1);
 

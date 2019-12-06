@@ -80,6 +80,16 @@ public class Library {
 		return count;
 	}
 
+	public String isAvailable(Item item) {
+		String message;
+		if (item.availability = false) {
+			message = item.name + " is unavailable.";
+		} else {
+			message = item.name + " is available.";
+		}
+		return message;
+	}
+
 	public void registerPerson(Person person) {
 		people1.add(person);
 	}
